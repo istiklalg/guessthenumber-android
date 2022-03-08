@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Sayıyı Bul</string>
+    <string name="creator_sign">istiklal güneş creative software tarafından tasarlanmış ve üretilmiştir.</string>
+    <string name="all_rights">Tüm hakları saklıdır 2022@</string>
+    <string name="title">SAYIYI TAHMİN ET</string>
+    <string name="user_name_placeholder">Oyuncu Adı</string>
+    <string name="play_button_text">OYNA</string>
+    <string name="change_user_text">KULLANICI DEĞİŞTİR</string>
+
+    <string name="game_selection_title">OYUN SEÇ</string>
+    <string name="game_selection_single_player">TEKLİ OYUN OYNA</string>
+    <string name="game_selection_play_with_machine">BİLGİSAYAR İLE OYNA</string>
+    <string name="game_selection_multi_player">ÇOK OYUNCULU OYNA</string>
+
+    <string name="single_player_title">BİLGİSAYARIN TUTTUĞU SAYIYI BUL</string>
+    <string name="guess_button_text">TAHMİN YAP</string>
+    <string name="score_line_label">Skor : </string>
+
+<!--    Table titles -->
+    <string name="guess_counter_title"> # </string>
+    <string name="guess_number_title">Tahminin</string>
+    <string name="guess_in_place_title">Doğru Yerde</string>
+    <string name="guess_not_in_place_title">Yanlış Yerde</string>
+    <string name="guess_score_title">Skor</string>
+
+<!--    Game Result Strings -->
+    <string name="game_winner_title">KAZANDIN</string>
+    <string name="game_winner_text">Tebrikler, doğru sayıyı buldun, skorun %s</string>
+    <string name="game_winner_great_score_text">Bravo !! Harika bir skor %s</string>
+    <string name="game_winner_new_max_text">Bravo !! Yeni en yüksek skorun %s</string>
+
+    <string name="game_result_positive_button_text">YENİDEN OYNA</string>
+    <string name="game_result_negative_button_text">ÇIK</string>
+
+<!--    Toast message text -->
+    <string name="empty_payer_name_warning">Bir oyuncu adı girin </string>
+    <string name="invalid_payer_name_warning">Lütfen geçerli bir oyuncu adı girin </string>
+    <string name="best_wishes_1">İyi eğlenceler </string>
+    <string name="max_score_notify">Güncel en yüksek skorun </string>
+
+    <string name="missing_digit_warning">Kayıp basamak var, Tahminini kontrol et 4 basamaklı olmalı </string>
+    <string name="start_with_zero_warning">4 basamaklı bir sayı 0 ile başlamamalı !! </string>
+    <string name="repeating_number_warning">Tahmininizde tekrar eden sayılar var !! </string>
+
+    <string name="coming_soon_title">Yakında ..</string>
+    <string name="coming_soon_message">Bu bölüm gelecek güncellemede eklenmiş olacak.</string>
+    <string name="coming_soon_toast">Teşekkürler</string>
+
+<!--    Content Descriptions -->
+    <string name="single_player_image_button">Tekli Oyun Butonu</string>
+    <string name="game_with_machine_image_button">Bilgisayarla Karşılıklı Oyna Butonu</string>
+    <string name="multi_player_image_button">Çok Oyunculu Oyun Butonu</string>
+
+<!--    Alert strings -->
+    <string name="alert_positive_button_text">TAMAM</string>
+    <string name="alert_negative_button_text">İPTAL</string>
+
+</resources>

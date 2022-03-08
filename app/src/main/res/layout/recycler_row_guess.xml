@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/guess_counter_title"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:text="1">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/guess_number_title"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Guess">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/guess_in_place_title"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="2">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/guess_not_in_place_title"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="1">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/guess_score_title"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="21"
+        android:textAlignment="viewEnd">
+
+    </TextView>
+
+</LinearLayout>

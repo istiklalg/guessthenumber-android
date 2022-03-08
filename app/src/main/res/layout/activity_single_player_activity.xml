@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/singlePlayerContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.SinglePlayerActivity">
+
+    <TextView
+        android:id="@+id/pageTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/single_player_title"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerTitle"
+        app:layout_constraintStart_toStartOf="@+id/pageTitle"
+        app:layout_constraintTop_toBottomOf="@+id/pageTitle" />
+
+    <LinearLayout
+        android:id="@+id/recyclerTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/guessResultsRecycler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider">
+
+        <TextView
+            android:id="@+id/guess_counter_title"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:text="@string/guess_counter_title">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/guess_number_title"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/guess_number_title">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/guess_in_place_title"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/guess_in_place_title">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/guess_not_in_place_title"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/guess_not_in_place_title">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/guess_score_title"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="@string/guess_score_title"
+            android:textAlignment="viewEnd">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/guessResultsRecycler"
+        app:layout_constraintStart_toStartOf="@+id/guessResultsRecycler"
+        app:layout_constraintTop_toTopOf="@+id/guessResultsRecycler" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/guessResultsRecycler"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/inputContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerTitle">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/guessResultsRecycler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guessResultsRecycler" />
+
+    <LinearLayout
+        android:id="@+id/inputContainer"
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/makeGuessButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guessResultsRecycler">
+
+        <EditText
+            android:id="@+id/numberInput1"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:digits="0123456789"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/numberInput2"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:digits="0123456789"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/numberInput3"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:digits="0123456789"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/numberInput4"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:digits="0123456789"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/makeGuessButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="49dp"
+        android:layout_marginEnd="49dp"
+        android:onClick="makeNewGuess"
+        android:text="@string/guess_button_text"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputContainer" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/makeGuessButton">
+
+        <TextView
+            android:id="@+id/scoreLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:labelFor="@id/scoreText"
+            android:paddingEnd="10dp"
+            android:text="@string/score_line_label"
+            android:textAlignment="viewEnd"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/scoreText"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:paddingEnd="5dp"
+            android:textAlignment="viewStart" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
