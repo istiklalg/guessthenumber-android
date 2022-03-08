@@ -1,5 +1,9 @@
 package com.istiklal.guessthenumber
 
+/**
+ * @author : istiklal
+ * */
+
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
